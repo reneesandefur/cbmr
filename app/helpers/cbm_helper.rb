@@ -1,0 +1,2 @@
+module CbmHelper
+end
