@@ -16,8 +16,12 @@
   <%= link_to 'CBMR', root_path, class: 'navbar-brand' %>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <span class="navbar-text"><%= link_to 'Stories', submissions_path %></span>
+      </li> &nbsp; &nbsp;
+      <li class="nav-item">
+        <span class="navbar-text"><%= link_to 'Submit a Story', new_submission_path %></span>
+      </li>
     </ul>
     <span class="navbar-text"><%= link_to 'Sign Up', '#' %>
     </span> &nbsp;

@@ -1,1 +1,8 @@
 <h1 class="text-center">Stories</h1>
+<% @submissions.each do |submission| %>
+ <div class="boom-box col-10 offset-1">
+        <h2><%= submission.title %></h2>
+        <p><%= submission.author %></p>
+        <p><%= submission.story %></p>
+        </div>
+<% end %>

@@ -8,5 +8,16 @@ class SubmissionsController < ApplicationController
     end
     
     def create
+        @submission = Submission.create(submission_params)
+        redirect_to submissions_path
+    end
+    
+    def show
+    end
+    
+    private
+    
+    def submission_params
+        params.require(:submission).permit(:title, :author, :story)
     end
 end
