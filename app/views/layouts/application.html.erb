@@ -23,12 +23,21 @@
         <span class="navbar-text"><%= link_to 'Submit a Story', new_submission_path %></span>
       </li>
     </ul>
-    <span class="navbar-text"><%= link_to 'Sign Up', '#' %>
+    <span class="navbar-text"><%= link_to 'Sign Up', sign_up_path %>
     </span> &nbsp;
     <span class="navbar-text"><%= link_to 'Login', '#', class: 'login' %>
     </span>
   </div>
+ </div>
 </nav>
+
+<% if notice.present? %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+  <p class="alert"><%= alert %></p>
+ <% end %> 
+   
     <%= yield %>
   </body>
 </html>
