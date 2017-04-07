@@ -8,6 +8,10 @@ body {
   background: image_url('mochaGrunge.png');
 }
 
+.navbar-brand, .navbar-text a{
+  color: white;
+}
+
 .bg_img {
   background: url("booksnew.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -26,6 +30,9 @@ body {
   text-shadow: 2px 2px 3px black;
 }
 
+.home_links {
+  color: white;
+}
 .sign_up {
   font-family: 'kaushan_scriptregular';
   text-align: center;

@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <%= link_to 'CBMR', root_path, class: 'navbar-brand' %>
@@ -37,7 +37,6 @@
 <% if alert.present? %>
   <p class="alert"><%= alert %></p>
  <% end %> 
-   
     <%= yield %>
   </body>
 </html>
